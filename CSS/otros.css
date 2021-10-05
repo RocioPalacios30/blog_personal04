@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor_2{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.todo, .titulo, .fotos, .box, .redes{
+    width: 100%;
+}
+
+/*Centrado de div e imagenes*/
+.todo{
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.9;
+}
+
+/*Centrado de titulo*/
+.titulo{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+/*Estilo de titulo*/
+.titulo h1 {
+    margin-bottom: 25px;
+}
+
+.fotos {
+display: flex;
+}
+
+.box figure{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*Tamaño de imagenes*/
+.box figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*Estilo para el fondo de los iconos*/
+.redes{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.315);
+    height: 0%;
+    line-height:  260px;
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ /*Animación de los iconos*/
+.box:hover .redes{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+/*Decoracion de iconos*/
+.redes a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 22px;
+    color: #cecece;
+    transition: all 1s ;
+}
+
+/*Color del nombre*/
+.box:hover h1{
+    color: crimson;
+    transition: 2s;
+}
+/*Color individual*/
+.icon-blog:hover{
+    color: rgb(255, 145, 0) ;
+}
+
+.icon-instagram:hover{
+    color: rgb(245, 83, 191);
+}
+
+.icon-facebook:hover{
+    color:rgb(26, 32, 211);
+}
